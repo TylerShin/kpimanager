@@ -1,5 +1,5 @@
 import { Meteor } from 'meteor/meteor';
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { fromJS, Map } from 'immutable';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import { createContainer } from 'meteor/react-meteor-data';
@@ -28,8 +28,10 @@ class App extends Component {
     return (
       <div className="app-container">
         <Navbar currentUser={currentUser} />
-        <AccountsUIWrapper />
-        {teamListCmp}
+        <div className="container">
+          <AccountsUIWrapper />
+          {teamListCmp}
+        </div>
       </div>
     );
   }
