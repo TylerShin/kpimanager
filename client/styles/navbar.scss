@@ -1,3 +1,22 @@
+.navbar-item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0px;
+  padding-top: 0px;
+  letter-spacing: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  height: 64px;
+  line-height: 64px;
+  cursor: pointer;
+}
+
+.navbar-item + .navbar-item {
+  margin-left: 20px;
+}
+
 .navbar-item-button-wrapper {
   margin-top: 14px;
 }
